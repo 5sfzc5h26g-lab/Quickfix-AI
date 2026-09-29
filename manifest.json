@@ -1,0 +1,9 @@
+{
+  "name": "QuickFix AI",
+  "short_name": "QuickFix",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080c17",
+  "theme_color": "#0b1020",
+  "description": "QuickFix AI small-business digital helper"
+}

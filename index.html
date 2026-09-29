@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080c17">
+<meta name="description" content="QuickFix AI — affordable digital help for small businesses.">
+<link rel="manifest" href="manifest.json">
+<title>QuickFix AI</title>
+<style>
+:root{--bg:#080c17;--panel:#101727;--line:#26334a;--text:#f6f8ff;--muted:#aab6cc;--blue:#35a7ff;--blue2:#2478ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 50% -10%,#132443 0,#080c17 42%);color:var(--text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}.wrap{max-width:1060px;margin:auto;padding:0 18px}
+header{position:sticky;top:0;z-index:20;background:rgba(8,12,23,.88);backdrop-filter:blur(14px);border-bottom:1px solid #1e2839}
+nav{height:68px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:850}.brand img{width:40px;height:40px;border-radius:50%;object-fit:cover}.brand b{color:var(--blue)}
+.navlinks{display:flex;gap:20px;color:#cbd5e8;font-size:14px}.navlinks a:hover{color:white}
+.hero{text-align:center;padding:62px 0 42px}.hero img{width:150px;height:150px;object-fit:cover;border-radius:50%;box-shadow:0 0 55px #228cff26}
+h1{font-size:clamp(38px,8vw,70px);line-height:.98;margin:22px auto 16px;max-width:850px}h1 span{color:var(--blue)}
+.hero p{max-width:690px;margin:auto;color:var(--muted);font-size:18px;line-height:1.65}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{border:0;border-radius:13px;padding:13px 18px;font-weight:800;cursor:pointer;font-size:15px}.primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff}.secondary{background:#121b2c;border:1px solid var(--line);color:#fff}
+section{padding:48px 0}.eyebrow{color:var(--blue);font-weight:800;text-transform:uppercase;letter-spacing:1.6px;font-size:12px}.title{font-size:31px;margin:7px 0}.muted{color:var(--muted);line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:14px;margin-top:22px}.card{background:linear-gradient(180deg,#111a2b,#0e1523);border:1px solid var(--line);border-radius:18px;padding:21px;box-shadow:0 8px 30px #00000014}.card h3{margin:0 0 7px}.card p{color:var(--muted);line-height:1.55}.price{font-size:27px;font-weight:900;color:#52b3ff;margin:9px 0}
+.badge{display:inline-block;background:#123154;color:#75c5ff;border:1px solid #24537f;padding:5px 9px;border-radius:999px;font-size:11px;font-weight:800}
+.steps{counter-reset:step}.step{display:flex;gap:14px;align-items:flex-start}.step:before{counter-increment:step;content:counter(step);width:30px;height:30px;display:grid;place-items:center;border-radius:50%;background:#17365a;color:#75c8ff;font-weight:900;flex:none}
+.beforeafter{display:grid;grid-template-columns:1fr 1fr;gap:14px}.quote{padding:17px;border-radius:14px;background:#0b1220;border:1px solid var(--line);color:#dce4f4;line-height:1.6}
+form{margin-top:20px;background:#101727;border:1px solid var(--line);border-radius:18px;padding:22px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{display:block;font-weight:750;margin:12px 0 7px}input,select,textarea{width:100%;padding:13px;border-radius:11px;border:1px solid #334158;background:#09101d;color:white;font:inherit}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}.result{display:none;margin-top:15px;padding:16px;border-radius:14px;background:#091426;border:1px solid #24425f}.result pre{white-space:pre-wrap;font:inherit;color:#dce7f8;line-height:1.5}
+.faq details{background:#101727;border:1px solid var(--line);border-radius:14px;padding:15px 17px;margin:10px 0}.faq summary{cursor:pointer;font-weight:800}.faq p{color:var(--muted);line-height:1.55}
+footer{border-top:1px solid #1f293b;margin-top:30px;padding:30px 0;color:#8491a8;text-align:center}
+@media(max-width:680px){.navlinks{display:none}.hero{padding-top:40px}.formgrid,.beforeafter{grid-template-columns:1fr}.full{grid-column:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home"><img src="logo.png" alt="QuickFix AI logo"><span>QuickFix <b>AI</b></span></a>
+<div class="navlinks"><a href="#services">Services</a><a href="#how">How it works</a><a href="#portfolio">Portfolio</a><a href="#faq">FAQ</a><a href="#order">Order</a></div>
+</nav></div></header>
+
+<main id="home">
+<div class="wrap">
+<section class="hero">
+<img src="logo.png" alt="QuickFix AI">
+<div class="eyebrow">Small-business digital help</div>
+<h1>Make your business look <span>better online.</span></h1>
+<p>QuickFix AI helps small businesses polish their descriptions, review replies, menus, price lists and everyday business writing — simply and affordably.</p>
+<div class="actions"><a class="btn primary" href="#order">Request a QuickFix</a><a class="btn secondary" href="#services">View services</a></div>
+</section>
+
+<section id="services"><div class="eyebrow">What we do</div><h2 class="title">Simple services. Clear pricing.</h2><p class="muted">Starter prices for the first QuickFix projects.</p>
+<div class="grid">
+<div class="card"><span class="badge">STARTER</span><h3>📝 Business Description</h3><div class="price">$15</div><p>A polished description for your website, profile or business listing.</p></div>
+<div class="card"><span class="badge">POPULAR</span><h3>⭐ Review Reply Pack</h3><div class="price">$15</div><p>10 professional responses to customer reviews.</p></div>
+<div class="card"><h3>📋 Menu Cleanup</h3><div class="price">$20</div><p>Clearer wording and organization for a menu or price list.</p></div>
+<div class="card"><h3>✍️ Caption Pack</h3><div class="price">$20</div><p>10 ready-to-post captions tailored to the business.</p></div>
+<div class="card"><span class="badge">BUNDLE</span><h3>🔥 Business Makeover</h3><div class="price">$50</div><p>Business description + 10 review replies + menu/price-list cleanup.</p></div>
+</div></section>
+
+<section id="how"><div class="eyebrow">How it works</div><h2 class="title">Three easy steps.</h2>
+<div class="grid steps">
+<div class="card step"><div><h3>Tell us what you need</h3><p>Choose a service and submit your current wording or details.</p></div></div>
+<div class="card step"><div><h3>QuickFix does the cleanup</h3><p>Your request is turned into polished, professional business copy.</p></div></div>
+<div class="card step"><div><h3>Review your finished work</h3><p>You receive the completed work and can request reasonable corrections.</p></div></div>
+</div></section>
+
+<section id="portfolio"><div class="eyebrow">Portfolio</div><h2 class="title">Example QuickFix</h2><div class="beforeafter">
+<div class="card"><span class="badge">BEFORE</span><div class="quote">“We clean houses. Call us for cleaning.”</div></div>
+<div class="card"><span class="badge">AFTER</span><div class="quote">“Reliable home cleaning services designed to give you a fresh, comfortable space without the hassle. Flexible options are available for homes, apartments and move-outs.”</div></div>
+</div></section>
+
+<section id="order"><div class="eyebrow">Start a project</div><h2 class="title">Request a QuickFix</h2><p class="muted">This starter version creates a ready-to-copy order message. It does not collect payment or send customer data to a server.</p>
+<form id="orderForm">
+<div class="formgrid">
+<div><label for="business">Business name</label><input id="business" required placeholder="Island Shine Cleaning"></div>
+<div><label for="owner">Customer name</label><input id="owner" placeholder="First name"></div>
+<div><label for="service">Service</label><select id="service"><option>Business Description — $15</option><option>Review Reply Pack — $15</option><option>Menu Cleanup — $20</option><option>Caption Pack — $20</option><option>Business Makeover — $50</option></select></div>
+<div><label for="contact">Contact method</label><input id="contact" required placeholder="Email or preferred contact"></div>
+<div class="full"><label for="details">What should be improved?</label><textarea id="details" required placeholder="Paste the current wording, menu, reviews, or explain what you want changed."></textarea></div>
+<div class="full"><button class="btn primary" type="submit" style="width:100%">Create Order Message</button></div>
+</div>
+<div class="result" id="result"></div>
+</form></section>
+
+
+<section id="ai-tools">
+  <div class="eyebrow">AI tools</div>
+  <h2 class="title">QuickFix AI Studio</h2>
+  <p class="muted">Turn rough business wording into polished copy. Your API key stays on the server and is never placed in this webpage.</p>
+  <form id="aiForm">
+    <div class="formgrid">
+      <div>
+        <label for="aiType">What do you need?</label>
+        <select id="aiType">
+          <option value="description">Business description</option>
+          <option value="review">Customer review reply</option>
+          <option value="menu">Menu / price-list cleanup</option>
+          <option value="captions">10 social captions</option>
+        </select>
+      </div>
+      <div>
+        <label for="aiTone">Tone</label>
+        <select id="aiTone">
+          <option>Professional</option>
+          <option>Friendly</option>
+          <option>Simple</option>
+          <option>Upbeat</option>
+        </select>
+      </div>
+      <div class="full">
+        <label for="aiInput">Paste the rough text or details</label>
+        <textarea id="aiInput" required placeholder="Example: We clean houses in Kona. We do move-outs too. We are friendly and flexible."></textarea>
+      </div>
+      <div class="full">
+        <button class="btn primary" type="submit" id="aiButton" style="width:100%">Generate with AI</button>
+      </div>
+    </div>
+    <div class="result" id="aiResult"></div>
+  </form>
+</section>
+
+<section id="faq" class="faq"><div class="eyebrow">Questions</div><h2 class="title">FAQ</h2>
+<details><summary>Do you make videos?</summary><p>No. QuickFix AI focuses on written business materials and simple digital cleanup.</p></details>
+<details><summary>Can I change the prices?</summary><p>Yes. These are starter prices. You can adjust them as your portfolio and experience grow.</p></details>
+<details><summary>Does the app process payments?</summary><p>Not yet. Payment processing should be added only after choosing a provider and checking its age/account requirements with a parent or guardian.</p></details>
+<details><summary>Is this a real AI-powered service?</summary><p>The website is the business front end. You can use an AI assistant to help fulfill orders, while checking every result yourself before sending it to a customer.</p></details>
+<details><summary>How do I get customers?</summary><p>Reach out personally to small businesses and show a relevant before/after example. Avoid spam and do not claim results you cannot prove.</p></details>
+</section>
+</div>
+</main>
+<footer><div class="wrap">© 2026 QuickFix AI · Making your business look better online.</div></footer>
+
+<script>
+const form=document.getElementById('orderForm'), result=document.getElementById('result');
+function esc(s){return s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ const data={business:business.value.trim(),owner:owner.value.trim(),service:service.value,contact:contact.value.trim(),details:details.value.trim(),created:new Date().toISOString()};
+ localStorage.setItem('quickfix_last_order',JSON.stringify(data));
+ const msg=`QuickFix AI Order\\n\\nBusiness: ${data.business}\\nCustomer: ${data.owner||'Not provided'}\\nService: ${data.service}\\nContact: ${data.contact}\\n\\nRequest:\\n${data.details}`;
+ result.style.display='block';
+ result.innerHTML=`<strong>Order message ready.</strong><pre>${esc(msg)}</pre><button class="btn secondary" id="copy">Copy message</button>`;
+ document.getElementById('copy').onclick=async()=>{await navigator.clipboard.writeText(msg);document.getElementById('copy').textContent='Copied ✓'};
+});
+if('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(()=>{});
+
+const aiForm=document.getElementById('aiForm');
+if(aiForm){
+  const aiButton=document.getElementById('aiButton');
+  const aiResult=document.getElementById('aiResult');
+  aiForm.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    aiButton.disabled=true;
+    aiButton.textContent='Generating…';
+    aiResult.style.display='block';
+    aiResult.textContent='Working on it…';
+    try{
+      const res=await fetch('/api/generate',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          type:document.getElementById('aiType').value,
+          tone:document.getElementById('aiTone').value,
+          text:document.getElementById('aiInput').value
+        })
+      });
+      const data=await res.json();
+      if(!res.ok) throw new Error(data.error||'Request failed');
+      aiResult.innerHTML='<strong>AI result</strong><pre>'+esc(data.output)+'</pre><button class="btn secondary" id="copyAi">Copy result</button>';
+      document.getElementById('copyAi').onclick=async()=>{
+        await navigator.clipboard.writeText(data.output);
+        document.getElementById('copyAi').textContent='Copied ✓';
+      };
+    }catch(err){
+      aiResult.innerHTML='<strong>Could not generate.</strong><p>'+esc(err.message)+'</p>';
+    }finally{
+      aiButton.disabled=false;
+      aiButton.textContent='Generate with AI';
+    }
+  });
+}
+
+</script>
+</body>
+</html>
